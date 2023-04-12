@@ -20,7 +20,6 @@ public class VerifyNIE {
         }
 
         public static boolean validar(String NIE) {
-            System.out.println("Entra");
             
                 String ultimaLetraMayuscula = "";
                
@@ -83,7 +82,6 @@ public class VerifyNIE {
                         }
                 }
 
-
                 if (NIENumeros.length() != 8) {
                         return false;
                 }
@@ -99,7 +97,6 @@ public class VerifyNIE {
             String[] asignarLetra = {"T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E"};
             residuo = numero % 23;
             letra = asignarLetra[residuo];
-            System.out.println(letra);
             return letra;
         }
     
